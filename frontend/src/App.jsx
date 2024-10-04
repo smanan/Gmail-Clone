@@ -9,6 +9,7 @@ import Mail from "./components/Mail";
 import SendEmail from "./components/SendEmail";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
+import { Toaster } from "react-hot-toast";
 
 const appRouter = createBrowserRouter([
   {
@@ -45,6 +46,7 @@ function App() {
       <div className="absolute w-[30%] bottom-0 right-20 z-10">
         <SendEmail/>
       </div>
+      <Toaster/>
     </div>
   );
 }
